@@ -1,0 +1,1 @@
+copy *.sql testcaseprocs.sql
