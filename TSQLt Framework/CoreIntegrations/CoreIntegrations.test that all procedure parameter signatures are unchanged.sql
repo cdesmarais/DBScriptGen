@@ -44,7 +44,7 @@ BEGIN
 	WHERE TYPE IN ('P','FN'))
 	AND		SCHEMA_NAME(SCHEMA_ID) not like 'tSQLt'
 	AND		SCHEMA_NAME(SCHEMA_ID) not like '%Integrations%'
-	AND 	SO.name NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = 'test that all procedure output signatures are unchanged' AND SchemaName=SCHEMA_NAME())
+	AND 	SO.name NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = 'test that all procedure output signatures are unchanged' AND SchemaName=SCHEMA_NAME(SCHEMA_ID))
 	UNION 
 	--WE add one line with null parameter values per proc
 	SELECT SCHEMA_NAME(SCHEMA_ID) AS [Schema],
@@ -59,7 +59,7 @@ BEGIN
 	WHERE 	TYPE IN ('P','FN')
 	AND		SCHEMA_NAME(SCHEMA_ID) not like 'tSQLt'
 	AND		SCHEMA_NAME(SCHEMA_ID) not like '%Integrations%'
-	AND 	SO.name NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = 'test that all procedure output signatures are unchanged' AND SchemaName=SCHEMA_NAME())
+	AND 	SO.name NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = 'test that all procedure output signatures are unchanged' AND SchemaName=SCHEMA_NAME(SCHEMA_ID))
 	ORDER BY [Schema], SO.name, P.parameter_id
 	--and compare them
     EXEC tSQLt.AssertEqualsTable '##Paramsactual', 'IntegrationTestData.dbo.CurrentParameterDefs'

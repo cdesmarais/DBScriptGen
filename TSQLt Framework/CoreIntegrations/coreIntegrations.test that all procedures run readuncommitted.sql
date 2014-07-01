@@ -11,10 +11,10 @@ BEGIN
 	SELECT OBJECT_NAME(object_id) as Name
 	INTO #tmp
 	from sys.sql_modules 
-	where definition not like '%SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED%'
+	where definition not like '%LEVEL READ UNCOMMITTED%'
 	AND		OBJECT_SCHEMA_NAME(object_id) not like 'tSQLt'
 	AND		OBJECT_SCHEMA_NAME(object_id) not like '%Integrations%'
-	AND 	OBJECT_NAME(object_id) NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = OBJECT_NAME(@@PROCID) AND SchemaName=Object_SCHEMA_NAME(@@PROCID))
+	AND 	OBJECT_NAME(object_id) NOT IN (select ObjectName FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = OBJECT_NAME(@@PROCID) AND SchemaName=Object_SCHEMA_NAME(object_id))
 	SET @actual=@@ROWCOUNT
 	IF @actual > 0
 	BEGIN

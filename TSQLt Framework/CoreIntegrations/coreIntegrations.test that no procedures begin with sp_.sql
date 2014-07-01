@@ -12,7 +12,7 @@ BEGIN
 	FROM	sys.procedures where name like 'sp[_]%'
 	AND		OBJECT_SCHEMA_NAME(object_id) not like 'tSQLt'
 	AND		OBJECT_SCHEMA_NAME(object_id) not like '%Integrations%'
-	AND 	OBJECT_NAME(object_id) NOT IN (select [ObjectName] FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = OBJECT_NAME(@@PROCID) AND SchemaName=OBJECT_SCHEMA_NAME(@@PROCID))
+	AND 	OBJECT_NAME(object_id) NOT IN (select [ObjectName] FROM IntegrationTestData.dbo.TestCaseExceptions WHERE TestName = OBJECT_NAME(@@PROCID) AND SchemaName=OBJECT_SCHEMA_NAME(object_id))
 	SET @actual=@@ROWCOUNT
 	IF @actual > 0
 	BEGIN
