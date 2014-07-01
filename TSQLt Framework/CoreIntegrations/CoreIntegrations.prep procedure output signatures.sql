@@ -5,6 +5,7 @@ GO
 CREATE PROCEDURE [CoreIntegrations].[prep procedure output signatures]
 AS
 BEGIN
+	return 0
 	DECLARE @tSQL VARCHAR(4096)
 	DECLARE CreateSigs CURSOR FAST_FORWARD FOR
 	SELECT 'SELECT * INTO IntegrationtestData.' + DB_NAME() + '_TestIntegrationSignatures.' + SO.name + ' FROM OPENROWSET(''SQLNCLI'', ''Server=(local);Trusted_Connection=yes;'', ''SET NOCOUNT ON;SET FMTONLY ON;' + 

@@ -6,6 +6,7 @@ GO
 CREATE PROCEDURE [CoreIntegrations].[test that all procedure output signatures are unchanged]
 AS
 BEGIN
+	Return 0
 	DECLARE @tSQL VARCHAR(4096)
 	DECLARE @DropSQL VARCHAR(4096)
 	--First we load all of our outputs into #temp tables
