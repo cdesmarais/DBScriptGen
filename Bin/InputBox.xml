@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InputBox</name>
+    </assembly>
+    <members>
+        <member name="M:Sagile.Forms.Designer.SeparatorDesigner.InitializeNewComponent(System.Collections.IDictionary)">
+            <summary>
+            Initializes a newly created component.
+            </summary>
+            <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be null if no default values are specified.</param>
+        </member>
+        <member name="P:Sagile.Forms.Designer.SeparatorDesigner.SelectionRules">
+            <summary>
+            Gets the selection rules that indicate the movement capabilities of a component.
+            </summary>
+            <value></value>
+            <returns>A bitwise combination of <see cref="T:System.Windows.Forms.Design.SelectionRules"/> values.</returns>
+        </member>
+        <member name="T:Sagile.Forms.InputBox">
+            <summary>
+            Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.InputBox.Show(System.String@,System.Object[])">
+            <summary>
+            Show an InputBox using the specified parameters.
+            <list type="table">
+            <listheader>
+                <term>If the type of the parameter is</term>
+                <description>The value will be used as</description>
+            </listheader>
+            <item>
+                <term><see cref="T:System.String"/>[]</term>
+                <description>the text of the label next to the text field for the first string, the text for the upper label for the second string, the title for the third string</description>
+            </item>
+            <item>
+                <term><see cref="T:System.String"/></term>
+                <description>the default value</description>
+            </item>
+            <item>
+                <term><see cref="T:System.Windows.Forms.HorizontalAlignment"/></term>
+                <description>the position of the upper label</description>
+            </item>
+            </list>
+            </summary>
+            <param name="value">The string containing the contents of the text box</param>
+            <param name="parameters">The parameters.</param>
+            <returns>
+            One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+            </returns>
+        </member>
+        <member name="M:Sagile.Forms.InputBox.Show(System.String@,System.Windows.Forms.IWin32Window,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="owner"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Sagile.Forms.Separator.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.Separator.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sagile.Forms.Separator.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.Separator.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>
+            Performs the work of setting the specified bounds of this control.
+            </summary>
+            <param name="x">The new <see cref="P:System.Windows.Forms.Control.Left"/> property value of the control.</param>
+            <param name="y">The new <see cref="P:System.Windows.Forms.Control.Top"/> property value of the control.</param>
+            <param name="width">The new <see cref="P:System.Windows.Forms.Control.Width"/> property value of the control.</param>
+            <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height"/> property value of the control.</param>
+            <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified"/> values.</param>
+        </member>
+        <member name="T:Sagile.Forms.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Sagile.Forms.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Sagile.Forms.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Sagile.Forms.Properties.Resources.LabelCancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:Sagile.Forms.Properties.Resources.LabelOK">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="F:Sagile.Forms.InputBoxForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.InputBoxForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sagile.Forms.InputBoxForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.InputBoxForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sagile.Forms.InputBoxForm"/> class.
+            </summary>
+        </member>
+        <member name="M:Sagile.Forms.InputBoxForm.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sagile.Forms.InputBoxForm"/> class.
+            </summary>
+            <param name="parameters">The parameters.</param>
+        </member>
+        <member name="M:Sagile.Forms.InputBoxForm.SetLayout">
+            <summary>
+            Sets the layout of the window according the descriptions.
+            </summary>
+        </member>
+        <member name="P:Sagile.Forms.InputBoxForm.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+    </members>
+</doc>
