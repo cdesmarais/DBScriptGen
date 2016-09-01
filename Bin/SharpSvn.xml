@@ -16504,11 +16504,11 @@ is set to the exception which would have been throw. Defaults to true.
         </member>
         <member name="M:SharpSvn.SvnClient.TryGetRepositoryId(System.String,System.Guid@)">
             <summary>Gets the Uuid of a Path, or <see cref="F:System.Guid.Empty" /> if path is not versioned</summary>
-            <returns>true if successfull, otherwise false</returns>
+            <returns>true if successful, otherwise false</returns>
         </member>
         <member name="M:SharpSvn.SvnClient.TryGetRepositoryId(System.Uri,System.Guid@)">
             <summary>Gets the Uuid of a Uri, or <see cref="F:System.Guid.Empty" /> if path is not versioned</summary>
-            <returns>true if successfull, otherwise false</returns>
+            <returns>true if successful, otherwise false</returns>
         </member>
         <member name="M:SharpSvn.SvnClient.GetRepositoryRoot(System.String)">
             <summary>Gets the repository root from the specified path</summary>
