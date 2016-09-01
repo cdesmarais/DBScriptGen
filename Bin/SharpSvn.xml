@@ -2135,7 +2135,7 @@ Generate @a diff output from the @a original, @a modified and @a latest
 
 </member>
         <member name="M:svn_diff_mem_string_diff3(svn_diff_t**,svn_string_t!System.Runtime.CompilerServices.IsConst*,svn_string_t!System.Runtime.CompilerServices.IsConst*,svn_string_t!System.Runtime.CompilerServices.IsConst*,svn_diff_file_options_t!System.Runtime.CompilerServices.IsConst*,apr_pool_t*)">
-Generate @a diff output from the @a orginal, @a modified and @a latest
+Generate @a diff output from the @a original, @a modified and @a latest
  * in-memory strings.  @a diff will be allocated in @a pool.
  *
  * @since New in 1.5.
