@@ -13389,7 +13389,7 @@ Extract the rootpath from the given filepath
 given filepath.  In the simplest example, given a filepath of "/foo", 
 returns the rootpath of "/" and filepath points at "foo".  This is far 
 more complex on other platforms, which will canonicalize the root form
-to a consistant format, given the APR_FILEPATH_TRUENAME flag, and also
+to a consistent format, given the APR_FILEPATH_TRUENAME flag, and also
 test for the validity of that root (e.g., that a drive d:/ or network 
 share //machine/foovol/). 
 The function returns APR_ERELATIVE if filepath isn't rooted (an
