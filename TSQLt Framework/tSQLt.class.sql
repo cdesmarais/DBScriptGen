@@ -2208,7 +2208,7 @@ BEGIN
      SELECT ''='' AS ' + @ResultColumn + ', Expected.* INTO ' + @ResultTable + ' 
        FROM tSQLt.Private_NullCellTable N 
        LEFT JOIN ' + @BaseTable + ' AS Expected ON N.I <> N.I 
-     TRUNCATE TABLE ' + @ResultTable + ';' --Need to insert an actual row to prevent IDENTITY property from transfering (IDENTITY_COL can't be NULLable);
+     TRUNCATE TABLE ' + @ResultTable + ';' --Need to insert an actual row to prevent IDENTITY property from transferring (IDENTITY_COL can't be NULLable);
   EXEC(@Cmd);
 END
 ---BUILD-
