@@ -12929,7 +12929,7 @@ The callback invoked by log message loopers, such as
  * This function is invoked once on each log message, in the order
  * determined by the caller (see above-mentioned functions).
  *
- * @a baton is what you think it is, and @a log_entry contains relevent
+ * @a baton is what you think it is, and @a log_entry contains relevant
  * information for the log message.  Any of @a log_entry-&gt;author,
  * @a log_entry-&gt;date, or @a log_entry-&gt;message may be @c NULL.
  *
